@@ -22,7 +22,7 @@
 %\maketitle
 
 % \begin{abstract}
-% 
+%
 % \end{abstract}
 
 \section{Name of group components}
@@ -31,71 +31,77 @@
     
         \item Ibáñez Pérez, Raúl
         \item Lao Tebar, Diego
-        \item Lázaro Costa, Lázaro
+        \item Lázaro Costa, Carles
         \item López Alcácer, Albert
         \item Ribes Marzá, Albert
         \item Roldán Montaner, Carlos
-        
+
     \end{itemize}
 
-\section{Data Source (\textbf{NEEDS REVISING})}
-    
-    We got our data from the next url: \url{http://archive.ics.uci.edu/ml/machine-learning-databases/heart-disease/} \newline
-    
-    We are going to use the Hungary, Long Beach and Switzerland data sources.
+\section{Data Source}
+
+    We got our dataset from the Machine Learning Repository of the Center for Machine Learning And Intelligent Systems (Bren School of Information and Computer Science)\newline
+    Repository url: \url{http://archive.ics.uci.edu/ml/datasets/Heart+Disease}\newline
+    Dataset url: \url{http://archive.ics.uci.edu/ml/machine-learning-databases/heart-disease/} \newline
+
+    We are going to use the Hungarian, Long Beach and Switzerland non processed .data sources.
 
 \section{Process to get data (\textbf{TO BE DONE})}
     The process to get data was done by the doctors and analysts from Hungary, Long Beach and Switzerland hospitals.
     
     The data is a copy of the patient medical results donated by different medical centers. All the centers used the same method and representation to keep the data in order to maintain the data consistency.
 
-\section{What data are about (\textbf{NEEDS REVISING})} 
+\section{What data is about (\textbf{NEEDS REVISING})}
 
-    Our data is a merge of four different datasets concerning heart disease diagnosis. The locations the data was collected from are:
+    Our data is a merge of four different datasets concerning heart disease diagnosis.
+    Each instance collects different conditions or variables (numerical, binary and qualitative) of a patient
+    which can be used to predict the presence of a heart disease in that patient.
     
+    The locations the data was collected from are:
+
     \begin{itemize}
-    
+
         \item Cleveland Clinic Foundation (The data is corrupted - Discarded)
         \item Hungarian Institute of Cardiology, Budapest
         \item V.A. Medical Center, Long Beach, CA
         \item University Hospital, Zurich, Switzerland
-        
+
     \end{itemize}
-    
+
     The principal investigator responsible for the data collection are:
-    
+
     \begin{itemize}
-    
+
         \item Andras Janosi, M.D.
         \item William Steinbrunn, M.D.
         \item Matthias Pfisterer, M.D.
         \item Robert Detrano, M.D., Ph.D.
-        
+
     \end{itemize}
-    
+
     The Cleveland data is corrupted, so we discarded it.
 
-\section{Structure of data matrix (\textbf{TO BE COMPLETED})} 
+\section{Structure of data matrix (\textbf{TO BE COMPLETED})}
 
     \begin{itemize}
-    
+
         \item \textbf{Number of records}:
         \begin{itemize}
-        
+
             \item \st{Cleveland: 303} (Discarded)
             \item Hungarian: 294
             \item Switzerland: 123
             \item Long Beach VA: 200
             \item \textbf{Total: 617}
-            
+
         \end{itemize}
         \item \textbf{Number of variables}: 76 (including the predicted one)
-        \item \textbf{Number of numerical variables}: 
-        \item \textbf{Number of binary variables}: 
+        \item \textbf{Number of numerical variables}:
+        \item \textbf{Number of binary variables}:
         \item \textbf{Number of qualitative variables}:
-        \item \textbf{Number and \% of missing data per each variable}: 
+        \item \textbf{Number and \% of missing data per each variable}:
         \item \textbf{\% of missing data in the whole data matrix}:
-        
+
     \end{itemize}
 
 
