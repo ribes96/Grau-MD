@@ -6,7 +6,7 @@ library(xlsx)
 setwd("../Datos")
 
 # Load Workspace including Dataset
-load("Workspace.RData")
+#load("Workspace.RData")
 raw_names <- c("AGE", "SEX", "CP", "TRESTBPS", "CHOL", "FBS", "RESTECG", "THALACH", "THALREST", "EXANG", "OLDPEAK", "SLOPE", "CA", "THAL", "SMOKE", "CIGS", "YEARS", "NUM", "PROTO", "THALDUR")
 
 # Read from XLSX (commented because it is already in the workspace)
@@ -114,6 +114,26 @@ dataset$EXERCISE_PROTOCOL[dataset$EXERCISE_PROTOCOL == "12"] <- "Arm_Ergometer"
 dataset$EXERCISE_PROTOCOL <- as.factor(dataset$EXERCISE_PROTOCOL)
 
 # -----
+#Cigarettes preprocessing (We are not a tobacco company)
+didSmoke <- function(smoke, cigs, years) {
+  if (!is.na(smoke) || !is.na(cigs) || !is.na(years)) {
+    if (!is.na(smoke) && smoke == "yes" || !is.na(cigs) && cigs > 0 || !is.na(years) && years > 0) {
+      "yes"
+    } else {
+      "no"
+    }
+  } else {
+    NA 
+  }
+}
+
+dataset$SMOKED <- Map(didSmoke, dataset$SMOKE, dataset$CIGARETTES, dataset$SMOKING_YEARS)
+dataset$SMOKE <- NULL
+dataset$SMOKING_YEARS <- NULL
+dataset$CIGARETTES <- NULL
+
+#sync()
+# -----
 
 # Whole Dataset
 View(dataset)
@@ -129,3 +149,4 @@ summary(dataset)
 
 # Total NAs
 sum(is.na(dataset))
+
