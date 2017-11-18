@@ -84,11 +84,15 @@ def geolocation(location):
                 if 'ZERO' not in str(e):
                     print(e)
                     if 'OVER_QUERY_LIMIT' in str(e):
-                        limit_warning = f'[Row {row_counter}] API LIMIT REACHED after {geolocated_rows} locations processed\n'
-                        limited = True
-                        print(limit_warning)
-                        open(f'gender-classifier-tweet-location-preprocessed-{ROW_START}-{ROW_END}-LIMITED.log', 'w+').write(limit_warning)
-                        input('From now on all non-cached locations will be set as Unknown. Press to continue...')
+                        add = input(f"\nAdd '{location}' to cache as Unknown? [y/N] ")
+                        if add != 'y':
+                            limit_warning = f'\n[Row {row_counter}] API LIMIT REACHED after {geolocated_rows} locations processed\n'
+                            limited = True
+                            print(limit_warning)
+                            open(f'gender-classifier-tweet-location-preprocessed-{ROW_START}-{ROW_END}-LIMITED.log', 'w+').write(limit_warning)
+                            input('From now on all non-cached locations will be set as Unknown. Press to continue...')
+                        else:
+                            geolocation_cache[location] = result
         geolocated_rows += 1
 
     if not pd.isnull(location):
@@ -110,4 +114,5 @@ twigen.tweet_location = twigen.tweet_location.apply(geolocation)
 print(f'FINISHED. Writing to CSV...')
 
 twigen.to_csv(f'gender-classifier-tweet-location-preprocessed-{ROW_START}-{ROW_END}.csv', encoding=ENCODING)
-json.dump(geolocation_cache, open(CACHE_FILE, 'w'), sort_keys=True, indent=4)
+#assert location in geolocation_cache
+json.dump(geolocation_cache, open(CACHE_FILE, 'w+'), sort_keys=True, indent=4)
