@@ -19,8 +19,8 @@ twigen = pd.read_csv("../gender-classifier-DFE-791531.csv", encoding=ENCODING)
 twigen = twigen.drop(twigen[twigen.gender == 'unknown'].index)
 
 total_rows = len(twigen)
-ROW_START = 14999
-ROW_END = 15001
+ROW_START = 0
+ROW_END = total_rows
 
 limited = False
 time_sum = 0
