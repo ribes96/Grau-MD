@@ -19,8 +19,8 @@ twigen = pd.read_csv("../gender-classifier-DFE-791531.csv", encoding=ENCODING)
 twigen = twigen.drop(twigen[twigen.gender == 'unknown'].index)
 
 total_rows = len(twigen)
-ROW_START = 0
-ROW_END = total_rows
+ROW_START = 14999
+ROW_END = 15001
 
 limited = False
 time_sum = 0
@@ -86,7 +86,7 @@ def geolocation(location):
             except GeocoderError as e:
                 if 'ZERO' not in str(e) and 'OVER_QUERY_LIMIT' in str(e):
                     limit_warning = f'\n[Row {row_counter}] OVER_QUERY_LIMIT after {geolocated_rows} locations processed (CACHED: {cached_rows})\n'
-                    limited = geolocated_rows > LIMIT
+                    limited = (geolocated_rows - cached_rows) > LIMIT
                     print(limit_warning)
                     if limited:
                         open(f'gender-classifier-tweet-location-preprocessed-{ROW_START}-{ROW_END}-LIMITED.log', 'w+').write(limit_warning)
