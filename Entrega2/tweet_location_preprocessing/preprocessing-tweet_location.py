@@ -16,13 +16,13 @@ PRINTABLE = set(string.printable)
 print('Loading CSV...')
 
 twigen = pd.read_csv("../gender-classifier-DFE-791531.csv", encoding=ENCODING)
-twigen = twigen.drop(twigen[twigen.gender == 'unknown'].index)
+twigen = twigen.drop(twigen[~twigen.gender.isin(['male', 'female', 'brand'])].index)
 
 total_rows = len(twigen)
 ROW_START = 0
 ROW_END = total_rows
 
-limited = False
+limited = True # Change to False to enable API calls (with True only reads from Cache)
 time_sum = 0
 geolocated_rows = 0
 cached_rows = 0
