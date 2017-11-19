@@ -361,7 +361,7 @@ female,early_morning,3,0,gray,13,0,white,65,false,12071,midday,Unknown,Jakarta
 male,afternoon,114,2702,gray,15,0,white,69,false,5292,midday,Unknown,Unknown
 brand,early_morning,69,1,lightred,7,0,white,86,false,35203,midday,United Kingdom,London
 male,morning,97,33485,gray,12,0,white,34,false,90197,midday,Unknown,Amsterdam
-male,morning,128,2316,0,14,0,black,42,false,68019,midday,Unknown,Central Time (US & Canada)
+male,morning,128,2316,black,14,0,black,42,false,68019,midday,Unknown,Central Time (US & Canada)
 brand,evening,134,5,gray,14,0,white,138,false,48286,midday,United States,Chennai
 female,afternoon,79,16210,gray,7,0,white,38,false,5842,midday,Unknown,Unknown
 brand,morning,39,119,lightgreen,6,0,white,66,false,8418,midday,United States,Unknown
@@ -657,7 +657,7 @@ male,morning,129,1509,red,15,0,black,108,false,37347,midday,Unknown,Atlantic Tim
 female,afternoon,23,3816,lightred,9,0,black,138,false,6050,midday,Unknown,Arizona
 brand,afternoon,26,102,lightblue,7,0,black,115,false,1393,midday,Unknown,Eastern Time (US & Canada)
 male,morning,162,647,black,10,0,black,76,false,7454,midday,Netherlands,Eastern Time (US & Canada)
-male,evening,152,2628,0,10,0,black,50,false,5247,midday,Unknown,Unknown
+male,evening,152,2628,black,10,0,black,50,false,5247,midday,Unknown,Unknown
 brand,evening,87,187,lightblue,15,0,white,82,false,18160,midday,United States,Quito
 brand,morning,119,3825,gray,15,0,white,124,false,12647,midday,Unknown,London
 female,afternoon,7,1186,gray,9,0,black,44,false,12339,midday,United States,Central Time (US & Canada)
@@ -951,7 +951,7 @@ brand,morning,122,1269,lightblue,12,0,lightgreen,134,false,3281,midday,United Ki
 male,morning,156,2995,gray,11,0,white,110,false,56625,midday,United States,Nairobi
 brand,afternoon,148,137,orange,8,0,black,98,false,723,midday,United States,Atlantic Time (Canada)
 female,evening,3,2649,black,9,0,white,138,false,3857,midday,Unknown,Arizona
-male,midday,71,2185,0,7,0,white,99,false,14625,midday,United Kingdom,Edinburgh
+male,midday,71,2185,black,7,0,white,99,false,14625,midday,United Kingdom,Edinburgh
 male,early_morning,72,686,gray,7,0,white,85,false,528,midday,United Kingdom,Unknown
 male,morning,56,0,gray,12,0,white,61,false,11905,midday,Unknown,Unknown
 brand,morning,123,8026,orange,11,0,white,113,false,43549,midday,United States,London
@@ -1430,7 +1430,7 @@ female,evening,19,417,gray,11,0,white,110,false,474,midday,Unknown,Unknown
 male,afternoon,36,1507,gray,7,0,white,140,false,46940,midday,United Kingdom,Casablanca
 female,early_morning,8,11988,lightblue,8,0,white,105,false,147086,midday,Unknown,Chennai
 female,afternoon,85,1114,gray,10,0,white,123,false,7282,midday,United States,Atlantic Time (Canada)
-male,evening,127,8960,0,9,0,white,87,false,19513,midday,United States,Eastern Time (US & Canada)
+male,evening,127,8960,black,9,0,white,87,false,19513,midday,United States,Eastern Time (US & Canada)
 brand,morning,101,36,lightblue,14,0,black,140,false,477,midday,United States,Pacific Time (US & Canada)
 male,afternoon,160,20450,gray,8,0,violet,134,false,19308,midday,Unknown,Unknown
 brand,morning,92,17,lightblue,13,0,white,128,false,4313,midday,Unknown,Unknown
@@ -1460,7 +1460,7 @@ male,morning,158,153,red,6,0,white,142,false,6073,midday,United States,Tehran
 male,afternoon,125,465,cyan,12,0,white,63,false,162723,midday,Unknown,Central Time (US & Canada)
 male,midday,57,1729,gray,8,0,white,33,false,13955,midday,United States,Central Time (US & Canada)
 male,midday,132,9007,cyan,8,1,white,138,false,56748,midday,United States,Eastern Time (US & Canada)
-female,evening,18,1957,0,8,0,white,89,false,8266,midday,Unknown,Amsterdam
+female,evening,18,1957,black,8,0,white,89,false,8266,midday,Unknown,Amsterdam
 female,afternoon,92,858,brown,8,0,white,49,false,57755,midday,United States,Quito
 male,evening,33,4089,gray,14,0,black,37,false,10416,midday,United States,Atlantic Time (Canada)
 male,afternoon,3,765,gray,13,0,white,130,false,4978,midday,United States,Unknown
@@ -1468,7 +1468,7 @@ brand,morning,160,0,gray,10,0,white,108,false,29172,midday,Unknown,Casablanca
 male,morning,34,1567,red,13,0,white,127,false,4396,midday,United Kingdom,Amsterdam
 female,early_morning,160,74,gray,11,0,white,143,false,56,midday,United Kingdom,Unknown
 female,early_morning,75,0,red,8,0,black,119,false,369,midday,United States,Pacific Time (US & Canada)
-male,morning,151,4446,0,10,0,red,140,false,2024,midday,Finland,Helsinki
+male,morning,151,4446,black,10,0,red,140,false,2024,midday,Finland,Helsinki
 brand,midday,155,0,lightblue,13,0,white,72,false,8468,midday,India,New Delhi
 male,early_morning,81,31,gray,11,0,white,140,false,148,midday,Paraguay,Unknown
 female,morning,151,106,orange,10,0,white,102,false,87569,midday,United States,Central Time (US & Canada)
@@ -1734,7 +1734,7 @@ male,midday,79,36211,orange,14,0,white,61,false,183132,midday,Unknown,Eastern Ti
 male,evening,3,1769,gray,11,0,white,139,false,4208,midday,Unknown,Eastern Time (US & Canada)
 male,morning,160,3503,gray,12,0,white,118,false,6797,midday,United Kingdom,London
 female,midday,150,968,blue,13,0,black,122,false,1183,midday,United States,Pacific Time (US & Canada)
-female,afternoon,7,1937,0,9,0,black,140,false,48633,midday,Unknown,Pacific Time (US & Canada)
+female,afternoon,7,1937,black,9,0,black,140,false,48633,midday,Unknown,Pacific Time (US & Canada)
 male,early_morning,37,73095,gray,7,0,white,30,false,28185,midday,Unknown,Pacific Time (US & Canada)
 female,afternoon,55,280,gray,14,0,black,101,false,57737,midday,Unknown,Unknown
 male,evening,27,960,gray,12,0,black,127,false,41098,midday,Unknown,London
@@ -1771,7 +1771,7 @@ male,morning,55,0,gray,9,0,white,131,false,34524,midday,United States,Central Ti
 male,evening,3,214,cyan,12,0,black,109,false,269,midday,Netherlands,Amsterdam
 male,afternoon,160,16,red,9,0,black,137,false,21786,midday,Nigeria,Amsterdam
 male,afternoon,3,9,gray,10,0,black,138,false,3926,midday,Unknown,Eastern Time (US & Canada)
-male,morning,27,180,0,9,0,white,104,false,1443,midday,Unknown,Tijuana
+male,morning,27,180,black,9,0,white,104,false,1443,midday,Unknown,Tijuana
 male,morning,299,1989,gray,13,0,white,77,false,4201,midday,United States,Pacific Time (US & Canada)
 brand,evening,23,190591,gray,12,0,white,56,false,43549,midday,Unknown,Unknown
 male,afternoon,33,7271,gray,8,0,white,56,false,33674,midday,Unknown,Pacific Time (US & Canada)
@@ -2189,7 +2189,7 @@ brand,early_morning,152,0,lightgreen,13,0,black,122,false,129,midday,United Stat
 female,afternoon,120,1036,orange,9,0,white,131,false,9174,midday,United States,Central Time (US & Canada)
 female,afternoon,18,21211,violet,7,0,white,103,false,113942,midday,Unknown,Central Time (US & Canada)
 female,morning,57,25,lightred,12,0,black,75,false,10657,midday,South Africa,Athens
-male,afternoon,53,549,0,13,0,white,130,false,2822,midday,Unknown,Unknown
+male,afternoon,53,549,black,13,0,white,130,false,2822,midday,Unknown,Unknown
 female,morning,155,0,orange,13,0,white,71,false,53463,midday,United States,London
 brand,morning,112,8415,brown,9,0,white,133,false,40722,midday,Unknown,Unknown
 male,afternoon,58,13354,brown,15,0,white,81,false,64544,midday,United States,Arizona
@@ -2362,7 +2362,7 @@ brand,morning,151,59,gray,11,0,cyan,125,false,4196,midday,United Kingdom,Unknown
 male,midday,3,0,gray,11,0,white,98,false,96,midday,Unknown,Unknown
 female,morning,10,5033,black,11,0,white,146,false,95346,midday,Turkey,Europe/Athens
 female,midday,250,5370,lightred,12,0,black,131,false,26276,midday,Unknown,Unknown
-female,morning,51,3227,0,10,0,black,112,false,571,midday,India,Pacific Time (US & Canada)
+female,morning,51,3227,black,10,0,black,112,false,571,midday,India,Pacific Time (US & Canada)
 female,evening,3,206,gray,7,0,white,129,false,1132,midday,Unknown,Unknown
 male,morning,133,44150,gray,15,1,white,72,false,300466,midday,Unknown,Lisbon
 brand,midday,138,36,gray,9,0,white,144,false,1361,midday,United States,Unknown
@@ -2979,7 +2979,7 @@ female,morning,59,6019,cyan,12,0,black,56,false,4951,midday,United States,Unknow
 female,afternoon,73,303,gray,15,0,white,37,false,1118,midday,Unknown,Unknown
 male,afternoon,81,11555,gray,12,0,white,47,false,39002,midday,Unknown,Stockholm
 male,morning,47,11772,orange,8,1,white,37,false,32490,midday,Unknown,Unknown
-male,afternoon,38,637,0,15,0,gray,113,false,5670,midday,United States,Arizona
+male,afternoon,38,637,black,15,0,gray,113,false,5670,midday,United States,Arizona
 male,early_morning,33,2,gray,7,0,white,108,false,29601,midday,Indonesia,Pacific Time (US & Canada)
 male,morning,82,606,gray,11,0,white,109,false,385,midday,United States,Unknown
 male,midday,138,574,gray,6,0,black,78,false,3601,midday,Canada,Eastern Time (US & Canada)
@@ -3456,7 +3456,7 @@ female,afternoon,3,0,gray,12,0,white,128,false,6155,midday,Unknown,Unknown
 female,morning,12,97,lightblue,14,0,white,87,false,7546,midday,Unknown,London
 female,afternoon,35,344,gray,15,0,white,59,false,63,midday,Singapore,Unknown
 male,afternoon,157,239,gray,13,0,white,140,false,822,midday,Unknown,Unknown
-male,evening,137,18788,0,13,0,white,84,false,64381,midday,Unknown,Hawaii
+male,evening,137,18788,black,13,0,white,84,false,64381,midday,Unknown,Hawaii
 male,morning,51,424,brown,13,0,white,41,false,4972,midday,Unknown,Quito
 male,midday,120,251,gray,12,0,white,139,false,150,midday,Unknown,Unknown
 brand,morning,135,20104,gray,13,0,white,105,false,74049,midday,Unknown,Unknown
@@ -3558,7 +3558,7 @@ male,afternoon,75,2727,gray,9,0,white,105,false,22872,midday,United States,Centr
 male,afternoon,152,8894,gray,8,0,white,127,false,11318,midday,Unknown,Unknown
 female,morning,33,24045,lightblue,14,0,white,137,false,37197,midday,Unknown,Quito
 female,afternoon,170,2241,gray,12,0,white,25,false,11685,midday,United States,Eastern Time (US & Canada)
-male,afternoon,41,2930,brown,8,0,0,140,false,39033,midday,United Kingdom,London
+male,afternoon,41,2930,brown,8,0,black,140,false,39033,midday,United Kingdom,London
 brand,early_morning,53,63,brown,15,0,lightgreen,137,false,42011,midday,United Kingdom,London
 brand,morning,116,5,brown,10,0,black,136,false,18,midday,United States,Unknown
 brand,midday,19,1349,lightblue,8,0,black,84,false,9256,midday,United States,Eastern Time (US & Canada)
@@ -4084,7 +4084,7 @@ brand,early_morning,152,8,lightred,15,0,white,109,false,236004,midday,United Sta
 female,afternoon,31,1375,gray,10,0,white,77,false,4795,midday,Unknown,Unknown
 brand,morning,57,10199,gray,15,0,white,145,false,33738,midday,Unknown,Unknown
 female,afternoon,115,6302,lightred,10,0,black,74,false,3057,midday,United States,Pacific Time (US & Canada)
-male,afternoon,14,1117,0,6,0,black,59,false,28727,midday,United States,Eastern Time (US & Canada)
+male,afternoon,14,1117,black,6,0,black,59,false,28727,midday,United States,Eastern Time (US & Canada)
 brand,evening,20,3082,lightblue,8,1,white,137,false,2801,midday,Unknown,Sydney
 brand,evening,3,618,gray,12,0,white,43,false,943,midday,Unknown,Tijuana
 female,afternoon,51,4550,gray,10,0,white,68,false,199805,midday,Unknown,Unknown
@@ -5234,7 +5234,7 @@ male,evening,150,44,gray,15,0,cyan,135,false,522,midday,United States,Pacific Ti
 brand,morning,42,0,black,12,0,white,137,false,22522,midday,United States,Central Time (US & Canada)
 brand,morning,152,0,gray,13,0,white,81,false,31182,midday,Belgium,Greenland
 brand,afternoon,52,0,gray,8,0,white,54,false,36423,midday,Unknown,Unknown
-female,early_morning,113,13008,0,12,0,black,101,false,28961,midday,Unknown,Amsterdam
+female,early_morning,113,13008,black,12,0,black,101,false,28961,midday,Unknown,Amsterdam
 male,morning,159,11136,gray,11,0,white,140,false,11795,midday,Unknown,Unknown
 brand,early_morning,3,0,gray,9,0,white,54,false,61446,midday,Unknown,Unknown
 male,morning,158,3060,red,11,0,white,143,false,27988,midday,United Kingdom,London
@@ -6099,7 +6099,7 @@ brand,afternoon,47,0,gray,7,0,white,54,false,74961,midday,Unknown,Unknown
 female,evening,96,467,gray,15,0,white,18,false,10327,midday,Unknown,Central Time (US & Canada)
 female,morning,4,4195,gray,13,0,white,103,false,292,midday,Unknown,Unknown
 male,evening,55,7,red,7,0,black,49,false,38811,midday,United States,Eastern Time (US & Canada)
-male,morning,148,28,gray,15,1,0,128,false,80321,midday,United States,Quito
+male,morning,148,28,gray,15,1,black,128,false,80321,midday,United States,Quito
 female,afternoon,3,97,gray,9,0,white,138,false,1687,midday,Unknown,Unknown
 male,morning,114,215,gray,15,0,white,87,false,548,midday,Unknown,Unknown
 male,afternoon,3,2614,gray,13,0,white,38,false,3184,midday,Unknown,Central Time (US & Canada)
@@ -6534,7 +6534,7 @@ female,early_morning,177,5,gray,12,0,white,137,false,465759,midday,Unknown,Unkno
 brand,early_morning,3,62,gray,10,0,white,89,false,36959,midday,Unknown,Pacific Time (US & Canada)
 male,afternoon,85,5572,red,9,0,white,135,false,8563,midday,United States,Eastern Time (US & Canada)
 female,morning,128,32859,lightblue,9,0,white,69,false,706,midday,United States,Unknown
-male,morning,64,0,0,11,0,white,134,false,9600,midday,United States,Central Time (US & Canada)
+male,morning,64,0,black,11,0,white,134,false,9600,midday,United States,Central Time (US & Canada)
 male,evening,160,25116,gray,13,0,black,137,false,23965,midday,United States,Pacific Time (US & Canada)
 female,midday,160,25258,lightgreen,11,0,white,59,false,66145,midday,Spain,Madrid
 brand,morning,17,0,gray,9,0,white,54,false,63136,midday,Unknown,Unknown
@@ -6789,7 +6789,7 @@ male,afternoon,3,9,brown,10,0,gray,72,false,540,midday,United Kingdom,London
 male,morning,6,15256,orange,12,0,white,45,false,30478,midday,United Kingdom,London
 brand,evening,3,0,gray,12,0,white,89,false,55913,midday,Unknown,Unknown
 brand,midday,50,0,gray,8,0,white,54,false,63057,midday,Unknown,Unknown
-brand,afternoon,116,515,0,12,0,white,108,false,1618,midday,Unknown,Eastern Time (US & Canada)
+brand,afternoon,116,515,black,12,0,white,108,false,1618,midday,Unknown,Eastern Time (US & Canada)
 male,morning,60,3575,lightblue,12,0,white,139,false,56406,midday,United States,Eastern Time (US & Canada)
 brand,midday,132,1,gray,8,0,white,86,true,2372591,midday,Unknown,Greenland
 brand,midday,136,1221,gray,10,0,white,78,false,37349,midday,Unknown,Casablanca
@@ -7424,7 +7424,7 @@ brand,afternoon,151,5955,lightblue,12,0,white,84,false,28651,midday,United State
 male,morning,160,557,blue,10,1,lightgreen,109,false,74976,midday,United States,Eastern Time (US & Canada)
 male,afternoon,153,19161,black,14,0,white,58,false,50604,midday,Unknown,Eastern Time (US & Canada)
 male,afternoon,2,384,cyan,12,0,black,129,false,2415,midday,United States,America/Los_Angeles
-male,morning,154,12613,0,15,0,white,118,false,15612,midday,Unknown,Unknown
+male,morning,154,12613,black,15,0,white,118,false,15612,midday,Unknown,Unknown
 brand,afternoon,3,25,lightblue,14,0,black,81,false,151386,midday,Unknown,Unknown
 female,afternoon,59,10877,gray,10,0,black,117,false,24660,midday,Unknown,Arizona
 brand,early_morning,142,631,lightgreen,9,0,black,144,false,5154,midday,United States,Eastern Time (US & Canada)
@@ -9426,7 +9426,7 @@ male,morning,147,1761,lightblue,8,0,black,130,false,40089,midday,Unknown,Unknown
 male,midday,36,91,gray,15,0,black,95,false,619,midday,Unknown,Pacific Time (US & Canada)
 female,afternoon,141,2539,red,13,0,lightblue,138,false,12791,midday,United States,La Paz
 female,midday,141,291,gray,15,0,white,138,false,3750,midday,United States,Unknown
-male,early_morning,45,2544,0,7,0,white,131,false,17431,midday,United States,London
+male,early_morning,45,2544,black,7,0,white,131,false,17431,midday,United States,London
 brand,midday,133,5,gray,12,0,white,127,false,27164,midday,Unknown,Eastern Time (US & Canada)
 female,early_morning,104,311,lightred,8,0,white,102,false,1241,midday,Australia,Unknown
 female,afternoon,23,3378,gray,7,0,black,15,false,32186,midday,Canada,Indiana (East)
@@ -10111,7 +10111,7 @@ female,afternoon,3,0,lightblue,9,0,black,71,false,3322,midday,Unknown,Central Ti
 female,morning,3,0,gray,15,0,white,122,false,28124,midday,Unknown,Unknown
 female,afternoon,50,13257,lightred,12,0,black,80,false,147778,midday,Unknown,Central Time (US & Canada)
 male,midday,90,1285,gray,12,0,lightgreen,130,false,4554,midday,United Kingdom,London
-brand,morning,154,0,0,13,0,white,133,true,5340,midday,United States,Eastern Time (US & Canada)
+brand,morning,154,0,black,13,0,white,133,true,5340,midday,United States,Eastern Time (US & Canada)
 brand,early_morning,79,0,gray,12,0,white,103,false,29711,midday,Indonesia,Unknown
 female,morning,155,27,violet,14,0,white,80,false,1508,midday,Unknown,Quito
 female,afternoon,36,16849,gray,13,0,black,49,false,45077,midday,Unknown,Eastern Time (US & Canada)
@@ -10589,7 +10589,7 @@ female,evening,20,4970,gray,9,0,white,106,false,9077,midday,Unknown,Arizona
 male,morning,106,874,gray,9,0,white,102,false,3984,midday,Unknown,Unknown
 female,afternoon,121,1372,cyan,8,0,black,135,false,14014,midday,United States,Brasilia
 female,evening,3,5404,gray,8,0,white,127,false,7978,midday,Unknown,Unknown
-female,afternoon,37,3669,orange,9,0,0,79,false,17144,midday,Unknown,Unknown
+female,afternoon,37,3669,orange,9,0,black,79,false,17144,midday,Unknown,Unknown
 female,afternoon,153,948,gray,13,0,white,138,false,3621,midday,Unknown,Unknown
 brand,morning,139,1,lightblue,8,0,black,119,false,121,midday,Unknown,Dublin
 brand,morning,57,27102,lightgreen,14,0,black,134,false,34948,midday,United States,Eastern Time (US & Canada)
@@ -11659,7 +11659,7 @@ male,morning,41,164,gray,10,0,white,140,false,378,midday,United Kingdom,Unknown
 male,afternoon,43,7730,gray,14,0,white,49,false,9154,midday,United States,Hawaii
 brand,evening,144,233,lightblue,15,0,white,115,false,106931,midday,Unknown,Central Time (US & Canada)
 brand,afternoon,130,0,lightblue,15,0,black,138,false,10712,midday,United States,Central Time (US & Canada)
-male,morning,39,3059,0,9,0,white,95,false,13025,midday,Unknown,Eastern Time (US & Canada)
+male,morning,39,3059,black,9,0,white,95,false,13025,midday,Unknown,Eastern Time (US & Canada)
 female,afternoon,3,1217,black,12,0,white,44,false,83375,midday,Unknown,Hawaii
 male,early_morning,21,154,gray,10,0,white,62,false,225,midday,Unknown,Unknown
 brand,early_morning,15,3,blue,9,0,black,140,false,27366,midday,United States,Pacific Time (US & Canada)
@@ -11906,7 +11906,7 @@ female,morning,3,0,gray,10,0,white,116,false,5875,midday,Unknown,Unknown
 female,morning,86,23,black,8,0,white,114,false,21898,midday,United States,Quito
 male,midday,86,4094,gray,10,0,white,62,false,1623,midday,United Kingdom,Casablanca
 female,afternoon,39,2501,gray,9,0,white,101,false,32925,midday,Unknown,Unknown
-female,morning,156,2130,red,10,0,0,99,false,110801,midday,Unknown,West Central Africa
+female,morning,156,2130,red,10,0,black,99,false,110801,midday,Unknown,West Central Africa
 brand,morning,101,5,orange,13,0,white,94,false,58648,midday,United States,Atlantic Time (Canada)
 male,evening,140,392,gray,14,0,white,107,false,1557,midday,United States,Unknown
 brand,afternoon,144,0,lightgreen,15,0,black,115,false,18283,midday,Unknown,Unknown
@@ -12398,7 +12398,7 @@ brand,midday,24,0,gray,10,0,white,121,false,89669,midday,Unknown,Unknown
 female,afternoon,16,5689,gray,12,0,white,148,false,19010,midday,United States,Atlantic Time (Canada)
 female,afternoon,50,853,gray,11,0,white,14,false,112,midday,Unknown,Unknown
 female,midday,50,24,gray,14,0,white,167,false,120,midday,Unknown,BST
-female,afternoon,145,2243,0,14,0,lightblue,80,false,3264,midday,United States,Central Time (US & Canada)
+female,afternoon,145,2243,black,14,0,lightblue,80,false,3264,midday,United States,Central Time (US & Canada)
 male,afternoon,90,439,brown,15,0,lightred,136,false,13154,midday,United Kingdom,Unknown
 brand,afternoon,61,985,red,9,0,white,125,false,426,midday,United States,Unknown
 brand,morning,65,2,gray,12,0,white,144,false,70129,midday,United States,Pacific Time (US & Canada)
@@ -13221,7 +13221,7 @@ male,early_morning,132,484,lightblue,12,0,white,135,false,2259,midday,United Sta
 male,evening,98,532,lightblue,14,0,black,66,false,2137,midday,United States,Pacific Time (US & Canada)
 female,early_morning,56,605,gray,10,0,white,139,false,2164,midday,South Africa,Unknown
 male,morning,39,10088,gray,10,0,white,66,false,14438,midday,Unknown,Unknown
-brand,afternoon,150,13,0,7,0,white,140,false,1272,midday,United States,Mountain Time (US & Canada)
+brand,afternoon,150,13,black,7,0,white,140,false,1272,midday,United States,Mountain Time (US & Canada)
 male,afternoon,32,35,lightblue,9,0,black,54,false,58,midday,United Kingdom,Unknown
 female,afternoon,14,33,gray,8,0,white,78,false,142,midday,Unknown,Unknown
 male,evening,131,1723,gray,10,0,white,44,false,18315,midday,Unknown,Eastern Time (US & Canada)
@@ -13290,7 +13290,7 @@ male,evening,149,1916,gray,9,0,white,119,false,575793,midday,Unknown,Mountain Ti
 female,evening,104,31,gray,12,0,white,136,false,145954,midday,Unknown,Central Time (US & Canada)
 female,afternoon,151,7,gray,10,0,white,99,false,216,midday,United States,Unknown
 male,afternoon,62,1168,orange,9,0,black,137,false,1246,midday,United States,Central Time (US & Canada)
-female,afternoon,57,3014,0,11,0,black,69,false,4809,midday,United States,Pacific Time (US & Canada)
+female,afternoon,57,3014,black,11,0,black,69,false,4809,midday,United States,Pacific Time (US & Canada)
 brand,morning,3,3,gray,14,0,white,110,false,70799,midday,Unknown,Unknown
 male,afternoon,121,1,black,8,0,white,133,false,53478,midday,United States,Eastern Time (US & Canada)
 female,afternoon,131,4187,red,14,0,black,108,false,4344,midday,United States,Pacific Time (US & Canada)
@@ -13873,7 +13873,7 @@ brand,early_morning,126,136,lightgreen,15,0,white,141,false,1075021,midday,Unkno
 male,early_morning,118,299,gray,12,0,white,82,false,2782,midday,United Kingdom,Unknown
 female,morning,35,6759,gray,14,0,white,85,false,17372,midday,Unknown,Unknown
 female,morning,13,2196,gray,12,0,white,89,false,884,midday,Unknown,Unknown
-female,afternoon,15,23445,0,9,0,white,91,false,88890,midday,United States,Quito
+female,afternoon,15,23445,black,9,0,white,91,false,88890,midday,United States,Quito
 male,morning,101,3211,gray,12,0,white,138,false,5524,midday,Unknown,Unknown
 brand,evening,107,121,brown,15,0,white,125,false,12966,midday,Australia,Sydney
 male,morning,81,3360,gray,11,0,white,139,false,12627,midday,United States,Unknown
@@ -13989,7 +13989,7 @@ brand,morning,29,410,gray,14,0,white,75,false,963,midday,Lebanon,Unknown
 male,evening,53,1,gray,15,0,white,142,false,84,midday,Unknown,Unknown
 female,evening,72,2713,orange,9,0,white,116,false,5385,midday,United States,Unknown
 male,evening,58,853,lightblue,8,0,black,93,false,4603,midday,Unknown,Unknown
-male,midday,64,517,blue,8,0,0,139,false,193005,midday,Unknown,Bangkok
+male,midday,64,517,blue,8,0,black,139,false,193005,midday,Unknown,Bangkok
 male,early_morning,13,239,blue,9,0,white,138,false,3504,midday,Unknown,Atlantic Time (Canada)
 brand,afternoon,155,29,gray,13,1,white,121,false,25541,midday,United States,Pacific Time (US & Canada)
 male,morning,156,96,gray,10,0,white,125,false,62,midday,Unknown,Unknown
@@ -14140,7 +14140,7 @@ brand,early_morning,3,10305,lightgreen,11,0,white,83,false,11587,midday,Unknown,
 brand,evening,150,143,gray,10,2,white,140,false,483,midday,Unknown,Unknown
 female,midday,42,5413,gray,12,0,black,67,false,11214,midday,Unknown,Unknown
 female,morning,115,102,gray,6,0,white,140,false,28652,midday,Unknown,Unknown
-male,afternoon,41,1,0,9,0,black,91,false,72,midday,Canada,Mountain Time (US & Canada)
+male,afternoon,41,1,black,9,0,black,91,false,72,midday,Canada,Mountain Time (US & Canada)
 female,afternoon,79,2712,orange,9,1,white,51,false,24666,midday,Unknown,Mountain Time (US & Canada)
 female,midday,3,276,gray,14,0,white,72,false,167628,midday,Unknown,Unknown
 male,afternoon,148,82,lightblue,9,0,black,140,false,354,midday,United States,Unknown
@@ -14191,7 +14191,7 @@ female,afternoon,147,529,orange,13,0,white,137,false,11767,midday,Canada,Quito
 brand,midday,134,82,lightgreen,11,0,black,133,false,1761,midday,United States,Mountain Time (US & Canada)
 male,early_morning,139,7286,gray,11,0,white,91,false,8123,midday,Unknown,Unknown
 female,afternoon,159,19317,red,15,0,white,123,false,170543,midday,Unknown,London
-brand,afternoon,84,2558,0,15,0,white,96,false,18209,midday,United States,Eastern Time (US & Canada)
+brand,afternoon,84,2558,black,15,0,white,96,false,18209,midday,United States,Eastern Time (US & Canada)
 brand,morning,79,2,gray,13,0,white,137,false,3682,midday,Unknown,Brussels
 brand,early_morning,102,707,lightblue,11,0,black,56,false,3436,midday,Unknown,Central Time (US & Canada)
 female,midday,91,50029,lightblue,10,0,white,86,false,88659,midday,Unknown,London
@@ -14215,7 +14215,7 @@ female,evening,9,21235,gray,10,0,white,99,false,10749,midday,United States,Unkno
 brand,midday,24,54635,brown,9,0,white,141,false,177813,midday,Unknown,Dublin
 female,midday,66,198,lightblue,12,0,lightblue,131,false,919,midday,Ireland,Dublin
 female,midday,24,4218,gray,10,0,white,55,false,17341,midday,United States,Pacific Time (US & Canada)
-female,morning,160,33,0,13,0,white,128,false,972,midday,Unknown,Central Time (US & Canada)
+female,morning,160,33,black,13,0,white,128,false,972,midday,Unknown,Central Time (US & Canada)
 male,afternoon,11,1504,gray,14,0,white,55,false,5722,midday,United Kingdom,Unknown
 male,midday,54,693,gray,9,0,white,50,false,97152,midday,Unknown,Casablanca
 male,morning,45,14131,lightred,8,0,white,47,false,21571,midday,Philippines,Irkutsk
@@ -15075,7 +15075,7 @@ male,afternoon,122,5817,gray,13,0,white,83,false,107780,midday,Unknown,Eastern T
 female,morning,64,495,lightgreen,14,0,gray,125,false,1601,midday,United States,Quito
 female,early_morning,62,0,gray,13,0,white,109,false,6644,midday,Unknown,Unknown
 female,morning,40,491,blue,13,0,violet,60,false,61818,midday,United States,Pacific Time (US & Canada)
-female,early_morning,75,4324,0,13,0,white,76,false,19798,midday,Unknown,London
+female,early_morning,75,4324,black,13,0,white,76,false,19798,midday,Unknown,London
 female,morning,49,717,brown,9,0,black,36,false,27963,midday,Unknown,Unknown
 female,midday,59,2343,brown,9,0,lightred,141,false,8515,midday,Unknown,Dublin
 female,morning,18,3523,brown,7,0,black,30,false,18133,midday,Pakistan,Casablanca
@@ -15476,7 +15476,7 @@ female,morning,163,7466,gray,14,0,black,94,false,7862,midday,Portugal,Pacific Ti
 female,morning,123,172,orange,9,0,gray,89,false,7818,midday,United States,Central Time (US & Canada)
 female,afternoon,19,488,gray,15,0,white,116,false,489,midday,Unknown,Unknown
 male,afternoon,160,1574,gray,10,0,white,128,false,11650,midday,United States,Unknown
-female,afternoon,54,8001,0,11,0,cyan,51,false,8291,midday,United States,Eastern Time (US & Canada)
+female,afternoon,54,8001,black,11,0,cyan,51,false,8291,midday,United States,Eastern Time (US & Canada)
 brand,afternoon,78,0,gray,10,0,white,113,false,20791,midday,United Kingdom,Unknown
 female,afternoon,49,301,lightred,13,0,white,136,false,4043,midday,United States,Atlantic Time (Canada)
 male,afternoon,92,1000,gray,11,0,white,83,false,1347,midday,South Africa,Unknown
@@ -15907,7 +15907,7 @@ female,evening,126,45,lightblue,13,0,black,108,false,143849,midday,United States
 female,early_morning,143,1668,gray,10,0,white,86,false,12351,midday,United States,Eastern Time (US & Canada)
 male,morning,84,4605,orange,11,0,white,130,false,4902,midday,Unknown,Quito
 female,afternoon,107,3658,lightblue,14,0,white,73,false,9175,midday,Unknown,Unknown
-male,early_morning,157,631,0,9,0,white,95,false,17689,midday,Ireland,London
+male,early_morning,157,631,black,9,0,white,95,false,17689,midday,Ireland,London
 female,early_morning,22,3301,gray,14,0,white,122,false,135,midday,Unknown,Pacific Time (US & Canada)
 brand,midday,62,21,lightblue,15,0,black,137,false,72,midday,United States,Unknown
 female,afternoon,3,676,gray,14,0,white,94,false,3120,midday,Unknown,Central Time (US & Canada)
@@ -16139,7 +16139,7 @@ male,afternoon,153,406,red,13,0,gray,66,false,20257,midday,Netherlands,Amsterdam
 brand,evening,27,5,gray,15,0,black,110,false,1325,midday,Unknown,Brisbane
 brand,morning,151,8511,brown,10,0,gray,146,false,12005,midday,United States,Pacific Time (US & Canada)
 female,morning,149,3688,gray,15,0,white,108,false,5430,midday,Unknown,Hawaii
-female,evening,79,179,gray,15,0,0,106,false,13247,midday,Unknown,Eastern Time (US & Canada)
+female,evening,79,179,gray,15,0,black,106,false,13247,midday,Unknown,Eastern Time (US & Canada)
 female,midday,10,88,brown,14,0,lightred,60,false,578,midday,Unknown,Unknown
 brand,afternoon,153,0,gray,10,0,white,135,true,3000,midday,United States,Hawaii
 male,midday,160,900,gray,9,0,white,82,false,10095,midday,United States,Arizona
@@ -16479,7 +16479,7 @@ male,afternoon,42,5732,gray,14,0,white,56,false,6550,midday,United States,Unknow
 male,morning,8,281,cyan,12,0,black,110,false,11723,midday,United States,Eastern Time (US & Canada)
 female,early_morning,69,1127,cyan,10,0,white,51,false,128183,midday,Unknown,Hawaii
 brand,early_morning,152,3,red,7,0,white,137,false,661336,midday,Canada,Brussels
-male,evening,27,1177,0,8,0,white,121,false,252108,midday,United States,Eastern Time (US & Canada)
+male,evening,27,1177,black,8,0,white,121,false,252108,midday,United States,Eastern Time (US & Canada)
 male,afternoon,3,636,gray,10,0,white,124,false,2853,midday,Unknown,Unknown
 male,afternoon,56,850,gray,10,0,white,114,false,158640,midday,Unknown,Eastern Time (US & Canada)
 male,morning,42,106,lightblue,13,0,white,137,false,3531,midday,Pakistan,Unknown
@@ -16713,7 +16713,7 @@ male,early_morning,84,2246,blue,15,0,white,89,false,6368,midday,Ireland,Casablan
 brand,morning,3,0,gray,13,0,white,86,false,70882,midday,Unknown,Unknown
 female,morning,76,33519,red,14,0,black,33,false,20473,midday,Unknown,London
 brand,midday,153,83,lightblue,11,0,black,135,false,15131,midday,Unknown,Pacific Time (US & Canada)
-female,afternoon,32,1770,0,12,0,black,89,false,11957,midday,Unknown,Eastern Time (US & Canada)
+female,afternoon,32,1770,black,12,0,black,89,false,11957,midday,Unknown,Eastern Time (US & Canada)
 female,early_morning,163,9315,lightblue,7,0,white,133,false,32252,midday,Spain,Madrid
 male,afternoon,136,569,lightblue,9,0,white,135,false,8629,midday,United States,Central Time (US & Canada)
 female,midday,85,3,gray,14,0,white,90,false,4190,midday,Unknown,Eastern Time (US & Canada)
@@ -18058,7 +18058,7 @@ female,morning,3,0,gray,11,0,white,73,false,37575,midday,Unknown,Unknown
 male,midday,106,1176,gray,11,0,cyan,134,false,73883,midday,Unknown,Pacific Time (US & Canada)
 brand,morning,64,27272,gray,12,1,white,73,false,58932,midday,Philippines,Unknown
 female,evening,3,1,gray,10,0,white,73,false,38618,midday,Unknown,Unknown
-brand,evening,131,1003,0,7,0,white,136,false,12681,midday,Australia,Brisbane
+brand,evening,131,1003,black,7,0,white,136,false,12681,midday,Australia,Brisbane
 brand,morning,55,758,gray,11,0,black,117,false,2083,midday,United States,Central Time (US & Canada)
 female,morning,3,0,gray,11,0,white,73,false,39003,midday,Unknown,Unknown
 female,early_morning,3,1,gray,10,0,white,73,false,37577,midday,Unknown,Unknown
@@ -18306,7 +18306,7 @@ brand,afternoon,126,0,gray,14,0,black,132,true,623,midday,United States,Eastern 
 female,afternoon,25,6598,gray,11,0,white,107,false,13298,midday,Unknown,Unknown
 female,afternoon,28,1680,gray,7,0,white,42,false,4983,midday,United States,Unknown
 female,morning,23,57979,lightred,15,0,brown,129,false,17545,midday,Unknown,Quito
-female,morning,35,1631,gray,12,0,0,112,false,7864,midday,United States,Central Time (US & Canada)
+female,morning,35,1631,gray,12,0,black,112,false,7864,midday,United States,Central Time (US & Canada)
 female,morning,20,1919,lightgreen,13,0,white,54,false,79466,midday,Unknown,Paris
 male,afternoon,103,15,gray,14,0,white,73,false,9243,midday,Unknown,Unknown
 male,morning,3,5,gray,15,0,white,73,false,61174,midday,Unknown,Taipei
@@ -18443,7 +18443,7 @@ female,afternoon,40,28356,red,12,0,white,48,false,7853,midday,Unknown,Eastern Ti
 brand,midday,131,0,orange,13,0,white,136,false,1988,midday,United States,Central Time (US & Canada)
 male,early_morning,44,37,lightblue,12,0,black,109,false,1022,midday,United States,Unknown
 male,afternoon,465,98,gray,10,0,white,86,false,642,midday,Unknown,Unknown
-male,early_morning,64,8,0,11,0,green,119,false,4892,midday,United States,Central Time (US & Canada)
+male,early_morning,64,8,black,11,0,green,119,false,4892,midday,United States,Central Time (US & Canada)
 female,morning,159,361,gray,14,0,black,134,false,1435,midday,United States,Quito
 female,midday,158,4,lightblue,15,0,black,101,false,530,midday,Unknown,Unknown
 male,morning,65,606,brown,11,0,black,79,false,9379,midday,United States,Unknown
