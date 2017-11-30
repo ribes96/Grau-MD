@@ -5,7 +5,8 @@
 import numpy as np  # Llibreria matemàtica
 import pandas as pd
 import sklearn # Llibreria de DM
-import sklearn.cross_validation as cv # Pel Cross-validation
+#import sklearn.cross_validation as cv # Pel Cross-validation
+import sklearn.model_selection as cv    # Pel Cross-validation
 from sklearn.naive_bayes import GaussianNB # Pel Naive Bayes
 
 # 2. Load the dataset
@@ -52,12 +53,13 @@ data.head()
 
 # 4. K-Fold Cross-Validation
 
-kf = cv.KFold(len(data), n_folds=10)
+#kf = cv.KFold(len(data), n_folds=10)
+kf = cv.KFold(n_splits=10)
 
 a_s = [] # Accuracy
 c_m = [] # Confusion Matrix
 
-for train_index, test_index in kf:
+for train_index, test_index in kf.split(data):
     
     # Split
     
@@ -80,6 +82,6 @@ for train_index, test_index in kf:
     a_s.append(sklearn.metrics.accuracy_score(labels_test,pred))
 
 print("ACCURACY SCORE")
-print("MEAN "+str(sum(a_s) / kf.n_folds))
+print("MEAN "+str(sum(a_s) / kf.n_splits))
 print("MAX  "+str(max(a_s)))
 print("MIN  "+str(min(a_s)))
