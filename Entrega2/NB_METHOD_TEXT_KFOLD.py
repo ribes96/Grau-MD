@@ -11,7 +11,7 @@ from sklearn.naive_bayes import GaussianNB # Pel Naive Bayes
 
 # 2. Load the dataset
 
-twigen = pd.read_csv("dataWithTextWords.csv", encoding='latin1')
+twigen = pd.read_csv("dataWithTextWordsPrep.csv", encoding='latin1')
 twigen.head()
 
 
