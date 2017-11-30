@@ -62,7 +62,7 @@ for train_index, test_index in kf:
     # Split
     
     data_train, data_test = pd.core.frame.DataFrame(data,index = train_index), pd.core.frame.DataFrame(data,index = test_index)
-    labels_train, labels_test = pd.core.frame.DataFrame(labels,index = train_index), pd.core.frame.DataFrame(labels,index = test_index)
+    labels_train, labels_test = pd.Series(labels,index = train_index, dtype = np.int64), pd.Series(labels,index = test_index, dtype = np.int64)
     
     # Training
     #data_train.info()
