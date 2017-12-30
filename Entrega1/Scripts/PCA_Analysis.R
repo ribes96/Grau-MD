@@ -55,7 +55,7 @@ percInerAccum
 
 # SELECTION OF THE SINGIFICNT DIMENSIONS (keep 80% of total inertia)
 
-nd = 6
+nd = 5
 
 # STORAGE OF THE EIGENVALUES, EIGENVECTORS AND PROJECTIONS IN THE nd DIMENSIONS
 
@@ -141,12 +141,15 @@ axis(side=4, pos= 0, labels = F, col="cyan")
 
 #nominal qualitative variables
 
-dcat<-c(1,3,6:7)
+# Uncomment the next line to see ALL the qualitative vars on the plot
+#dcat<-c(3, 7, 12:16, 19, 20)
+# The most used vars to diagnosis by the doctors
+dcat<-c(3, 7, 12, 19)
 #divide categoricals in several graphs if joint representation saturates
 
 #build a palette with as much colors as qualitative variables 
 
-colors<-c("blue","red","green","orange","darkgreen")
+colors<-c("blue","red","green","orange","darkgreen", "chocolate", "darkmagenta", "darkorchid1", "darkolivegreen4")
 #alternative
 #colors<-rainbow(length(dcat))
 
@@ -172,7 +175,7 @@ X<-fm*U[,eje1]
 Y<-fm*U[,eje2]
 
 #represent numerical variables in background
-plot(Psi[,eje1],Psi[,eje2],type="n",xlim=c(-1,1), ylim=c(-3,1))
+plot(Psi[,eje1],Psi[,eje2],type="n",xlim=c(-1.5,1.5), ylim=c(-1,1))
 #plot(X,Y,type="none",xlim=c(min(X,0),max(X,0)))
 axis(side=1, pos= 0, labels = F, col="cyan")
 axis(side=3, pos= 0, labels = F, col="cyan")
@@ -189,10 +192,10 @@ for(k in dcat){
   seguentColor<-colors[c]
   
   fdic1 = tapply(Psi[,eje1],dd[,k],mean)
-  fdic2 = tapply(Psi[,eje2],dd[,k],mean) 
+  fdic2 = tapply(Psi[,eje2],dd[,k],mean)
   
   #points(fdic1,fdic2,pch=16,col=seguentColor, labels=levels(dd[,k]))
-  text(fdic1,fdic2,labels=levels(dd[,k]),col=seguentColor, cex=0.6)
+  text(fdic1,fdic2,labels=levels(dd[,k]),col=seguentColor, cex=0.7)
   c<-c+1
 }
 legend("bottomleft",names(dd)[dcat],pch=1,col=colors, cex=0.6)
