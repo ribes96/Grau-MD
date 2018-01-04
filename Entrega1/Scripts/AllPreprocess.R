@@ -229,9 +229,15 @@ dataset$EXERCISE_PROTOCOL <- droplevels(dataset$EXERCISE_PROTOCOL)
 levels(dataset$EXERCISE_PROTOCOL)
 
 # FIX SOME NUMERICAL VARIABLES
-
+dataset$EXERCISE_DURATION_MINUTES <- as.character(dataset$EXERCISE_DURATION_MINUTES)
 dataset$EXERCISE_DURATION_MINUTES <- as.numeric(dataset$EXERCISE_DURATION_MINUTES)
+dataset$ST_DIFF_EXERCISE_VS_REST <- as.character(dataset$ST_DIFF_EXERCISE_VS_REST)
 dataset$ST_DIFF_EXERCISE_VS_REST <- as.numeric(dataset$ST_DIFF_EXERCISE_VS_REST)
+
+# REPLACE SOME 0 VALUES AS NA
+
+dataset$CHOLESTEROL[dataset$CHOLESTEROL == 0] <- NA
+dataset$REST_BLOOD_PRESSURE[dataset$REST_BLOOD_PRESSURE == 0] <- NA
 
 # Insert from which Hospital each row comes from
 
