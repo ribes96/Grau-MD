@@ -1,5 +1,4 @@
-#  READING CREDSCO_BIN
-# load("d:/karina/docencia/sreferenciesppt/16.AssociatiusVisualitzacio/MultivariateAnalysis/PracticaR/credscok_bin")
+#  READING HEART DATASET
 setwd("../Datos")
 dd <- readRDS("dataset3.rds");
 
@@ -53,7 +52,7 @@ percInerAccum<-100*cumsum(pc1$sdev[1:dim(dcon)[2]]^2)/dim(dcon)[2]
 percInerAccum
 
 
-# SELECTION OF THE SINGIFICNT DIMENSIONS (keep 80% of total inertia)
+# SELECTION OF THE SINGIFICNT DIMENSIONS (keep 80% aproximately of total inertia)
 
 nd = 5
 
@@ -80,9 +79,6 @@ axis(side=1, pos= 0, labels = F, col="cyan")
 axis(side=3, pos= 0, labels = F, col="cyan")
 axis(side=2, pos= 0, labels = F, col="cyan")
 axis(side=4, pos= 0, labels = F, col="cyan")
-
-#library(rgl)
-#plot3d(Psi[,1],Psi[,2],Psi[,3])
 
 #Projection of variables
 
@@ -116,14 +112,14 @@ text(X,Y,labels=etiq,col="darkblue", cex=0.7)
 #Now we project both cdgs of levels of a selected qualitative variable without
 #representing the individual anymore
 
-plot(Psi[,eje1],Psi[,eje2],type="n")
+plot(Psi[,eje1],Psi[,eje2],type="n", xlim=c(-1.5,1.5), ylim=c(-1,1))
 axis(side=1, pos= 0, labels = F, col="cyan")
 axis(side=3, pos= 0, labels = F, col="cyan")
 axis(side=2, pos= 0, labels = F, col="cyan")
 axis(side=4, pos= 0, labels = F, col="cyan")
 
 #select your qualitative variable
-k<-1 #dictamen in credsco
+k<-15 #dictamen in credsco
 varcat<-dd[,k]
 fdic1 = tapply(Psi[,eje1],varcat,mean)
 fdic2 = tapply(Psi[,eje2],varcat,mean) 
@@ -175,7 +171,7 @@ X<-fm*U[,eje1]
 Y<-fm*U[,eje2]
 
 #represent numerical variables in background
-plot(Psi[,eje1],Psi[,eje2],type="n",xlim=c(-1.5,1.5), ylim=c(-1,1))
+plot(Psi[,eje1],Psi[,eje2],type="n",xlim=c(-2,2), ylim=c(-2,2))
 #plot(X,Y,type="none",xlim=c(min(X,0),max(X,0)))
 axis(side=1, pos= 0, labels = F, col="cyan")
 axis(side=3, pos= 0, labels = F, col="cyan")
@@ -232,7 +228,8 @@ legend("topleft",names(dd)[dordi],pch=1,col=colors[1:length(dordi)], cex=0.6)
 # PROJECCIÓ OF INDIVIDUALS DIFFERENTIATING THE Dictamen
 # (we need a numeric Dictamen to color)
 
-varcat=dd[,1]
+k<-15
+varcat=dd[,k]
 plot(Psi[,1],Psi[,2],col=varcat)
 axis(side=1, pos= 0, labels = F, col="darkgray")
 axis(side=3, pos= 0, labels = F, col="darkgray")
