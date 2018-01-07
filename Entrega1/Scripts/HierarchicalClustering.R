@@ -17,6 +17,28 @@ dcon<-data.frame (AGE, REST_BLOOD_PRESSURE, CHOLESTEROL, MAX_HR, REST_HR, ST_DIF
 # which(names(dd)=="AGE") useful to know the column index of an attribute
 d<-dist(dcon[1:7,])
 
+
+library(cluster)
+# install.packages('fpc')
+library(fpc)
+
+# KMEANS RUN, BUT HOW MANY CLASSES?
+
+k1 <- kmeans(dcon, centers=4)
+names(dcon)
+print(k1)
+
+attributes(k1)
+
+k1$size
+
+k1$withinss
+
+k1$centers
+
+plotcluster(dcon, k1$cluster)
+
+
 #move to Gower mixed distance to deal 
 #simoultaneously with numerical and qualitative data
 
