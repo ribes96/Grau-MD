@@ -67,7 +67,7 @@ CT <- cutree(h1,bestCut)
 
 dataset["cluster"] <- CT
 
-for (clust in c(1:cut)){
+for (clust in c(1:bestCut)){
   # REST_BLOOD_PRESSURE
   aux = mean(dataset$REST_BLOOD_PRESSURE[dataset$cluster == clust],na.rm=TRUE)
   dataset$REST_BLOOD_PRESSURE[is.na(dataset$REST_BLOOD_PRESSURE) & dataset$cluster == clust] <- aux
