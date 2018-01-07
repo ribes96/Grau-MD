@@ -51,20 +51,23 @@ for (cut in seq(10,400,10)){
     dataset$EXERCISE_DURATION_MINUTES[is.na(dataset$EXERCISE_DURATION_MINUTES) & dataset$cluster == clust] <- aux
   }
   numNAs = max(colSums(is.na(dataset)))
-  cat(" - Max number of NAs: ", numNAs, " \n")
+  aux1 = nrow(dataset)
+  dataset <- dataset[complete.cases(dataset), ]
+  aux2 = nrow(dataset)
+  cat(" - Number of NAs: ", aux1 - aux2, " \n")
 }
 
-# We think that the best cut is 100
+# We think that the best cut is 20
 
 dataset <- original
 
-bestCut <- 100
+bestCut <- 20
 
 CT <- cutree(h1,bestCut)
 
 dataset["cluster"] <- CT
 
-for (clust in c(1:cut)){
+for (clust in c(1:bestCut)){
   # REST_BLOOD_PRESSURE
   aux = mean(dataset$REST_BLOOD_PRESSURE[dataset$cluster == clust],na.rm=TRUE)
   dataset$REST_BLOOD_PRESSURE[is.na(dataset$REST_BLOOD_PRESSURE) & dataset$cluster == clust] <- aux
