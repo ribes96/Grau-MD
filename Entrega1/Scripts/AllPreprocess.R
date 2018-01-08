@@ -93,6 +93,7 @@ dataset$DISEASE_STATUS[dataset$DISEASE_STATUS == "0"] <- "less_than_fifthy_perce
 dataset$DISEASE_STATUS[dataset$DISEASE_STATUS == "1"] <- "greater_than_fifthy_percent_diameter_narrowing"
 dataset$DISEASE_STATUS <- as.factor(dataset$DISEASE_STATUS)
 
+
 # EXERCISE_PROTOCOL is qualitative
 dataset$EXERCISE_PROTOCOL <- as.character(dataset$EXERCISE_PROTOCOL)
 dataset$EXERCISE_PROTOCOL[dataset$EXERCISE_PROTOCOL == "1"] <- "Bruce"
@@ -107,10 +108,37 @@ dataset$EXERCISE_PROTOCOL[dataset$EXERCISE_PROTOCOL == "9"] <- "Bike_100"
 dataset$EXERCISE_PROTOCOL[dataset$EXERCISE_PROTOCOL == "10"] <- "Bike_75"
 dataset$EXERCISE_PROTOCOL[dataset$EXERCISE_PROTOCOL == "11"] <- "Bike_50"
 dataset$EXERCISE_PROTOCOL[dataset$EXERCISE_PROTOCOL == "12"] <- "Arm_Ergometer"
+kpaToCat <- function(x) {
+    if (!is.na(x)) {
+      if (x == '150')
+        return("Bike_150")
+      else if (x == '125')
+        return("Bike_125")
+      else if (x == '100')
+        return("Bike_100")
+      else if (x == '75')
+        return("Bike_75")
+      else if (x == '50')
+        return("Bike_50")
+      else if (x == '175' || x == '25' || x == '200' || x == '130' )
+        return(NA)
+      else
+        return(x)
+    } else {
+      return(NA)
+    }
+}
+dataset$EXERCISE_PROTOCOL
+library(purrr)
+dataset$EXERCISE_PROTOCOL <- unlist( map(dataset$EXERCISE_PROTOCOL, kpaToCat), use.names = FALSE)
 dataset$EXERCISE_PROTOCOL <- as.factor(dataset$EXERCISE_PROTOCOL)
 
+
+
+
+
 # -----
-#Cigarettes preprocessing (We are not a tobacco company)
+#Cigarettes preprocessing
 didSmoke <- function(smoke, cigs, years) {
   if (!is.na(smoke) || !is.na(cigs) || !is.na(years)) {
     if (!is.na(smoke) && smoke == "yes" || !is.na(cigs) && cigs > 0 || !is.na(years) && years > 0) {
@@ -220,7 +248,7 @@ dataset$THALIUM_STRESS_TEST_RESULT <- as.factor(dataset$THALIUM_STRESS_TEST_RESU
 dataset$THALIUM_STRESS_TEST_RESULT <- droplevels(dataset$THALIUM_STRESS_TEST_RESULT)
 levels(dataset$THALIUM_STRESS_TEST_RESULT)
 
-# EXERCISE_PROTOCOL -> UNKNOWN QUALITATIVE (!!!! WE STILL NEED TO FIX SOME VALUES !!!!)
+# EXERCISE_PROTOCOL -> UNKNOWN QUALITATIVE
 
 dataset$EXERCISE_PROTOCOL <- as.character(dataset$EXERCISE_PROTOCOL)
 dataset$EXERCISE_PROTOCOL[is.na(dataset$EXERCISE_PROTOCOL)] <- "unknown"
